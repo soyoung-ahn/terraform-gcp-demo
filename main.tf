@@ -8,9 +8,11 @@ provider "google" {
 resource "google_compute_instance" "vm_instance" {
   name         = var.instance_name
   machine_type = var.instance_type
-  labels = {
+  labels = merge(var.additional_labels,
+    {
       swqa = "devops"
-  }
+    }
+  )
 
   boot_disk {
     initialize_params {
