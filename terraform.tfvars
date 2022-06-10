@@ -5,3 +5,6 @@ instance_name = "terraform-core-hi-instance"
 instance_type = "e2-micro"
 instance_image = "debian-cloud/debian-9"
 vpc_name = "terraform-core-hi-network"
+additional_labels = {
+  "created_by" = "hyein"
+}
