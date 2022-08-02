@@ -1,10 +1,10 @@
 project_id = "opsnow-qa-automation"
 region = "asia-northeast3"
 zone = "asia-northeast3-a"
-instance_name = "terraform-core-hi-instance"
+instance_name = "terraform-core-sy-instance"
 instance_type = "e2-micro"
-instance_image = "debian-cloud/debian-9"
-vpc_name = "terraform-core-hi-network"
+instance_image = "debian-10-buster-v20220719"
+vpc_name = "terraform-core-sy-network"
 additional_labels = {
-  "created_by" = "hyeinqa"
+  "created_by" = "soyoungqa"
 }
